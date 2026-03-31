@@ -7,5 +7,23 @@ void main(){
     double imc = peso / (altura * altura);
     String classificacao = "";
 
-    
+    switch (genero) {
+        case 'M':
+            if (imc >= 40) classificacao = "Obesidade Mórbida";
+            else if (imc >= 30) classificacao = "Obesidade Moderada";
+            else if (imc >= 25) classificacao = "Obesidade Leve";
+            else if (imc >= 20) classificacao = "Normal";
+            else classificacao = "Abaixo do Normal";
+            break;
+        case 'F':
+        case 'N': // reutiliza a mesma tabela feminina
+            if (imc >= 39) classificacao = "Obesidade Mórbida";
+            else if (imc >= 29) classificacao = "Obesidade Moderada";
+            else if (imc >= 24) classificacao = "Obesidade Leve";
+            else if (imc >= 19) classificacao = "Normal";
+            else classificacao = "Abaixo do Normal";
+            break;
+        default:
+            break;
+    }
 }
