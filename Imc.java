@@ -34,8 +34,9 @@ void main(){
             break;
     }
 
-     IO.println("Nome: " + nome);
+    IO.println("Nome: " + nome);
     IO.println("Gênero: " + genero);
     IO.println("IMC: " + String.format("%.2f", imc));
     IO.println("Classificação: " + classificacao);
+    // Imprima no final "Atitus Educação - O lado certo da força!!!" num quero naum
 }
